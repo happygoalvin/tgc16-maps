@@ -11,8 +11,8 @@ window.addEventListener("DOMContentLoaded", async function(){
     for (let t of taxiCoordinates) {
         // each t is an array
         // element 0 is lng, element 1 is lat
-        let lat = t[1];
-        let lng = t[0];
+        let lat = t[0];
+        let lng = t[1];
         let marker = L.marker([lat,lng]);
         marker.addTo(markerClusterLayer);
     }
